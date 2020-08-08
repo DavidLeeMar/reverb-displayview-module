@@ -30,18 +30,12 @@ CREATE TABLE products (
   category_id INTEGER NOT NULL,
   listed VARCHAR(250) NOT NULL,
   _condition VARCHAR(250) NOT NULL,
-  brand	VARCHAR(250) NOT NULL,
   model	VARCHAR(250) NOT NULL,
   finish	VARCHAR(250) NOT NULL,
-  categories VARCHAR(250) NOT NULL,
   _year INTEGER (4) NOT NULL,
   made_in VARCHAR(250) NOT NULL,
   PRIMARY KEY(ID)
 );
-
-
-
-
 
 CREATE TABLE images (
 id INTEGER NOT NULL AUTO_INCREMENT,
@@ -50,9 +44,6 @@ product_id INTEGER NOT NULL,
 PRIMARY KEY(ID),
 FOREIGN KEY (product_id) REFERENCES products(id)
 );
-
-
-
 
 ALTER TABLE products
 ADD FOREIGN KEY (seller_id) REFERENCES sellers(id);
