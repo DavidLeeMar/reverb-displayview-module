@@ -1,4 +1,9 @@
 import React from 'react';
+import Nudge from './Nudge.jsx';
+import Seller from './Seller.jsx';
+import About from './About.jsx';
+import Findmore from './Findmore.jsx';
+import Title from './Title.jsx'
 
 class App extends React.Component {
   constructor(props) {
@@ -7,20 +12,18 @@ class App extends React.Component {
 
   render() {
     return(
-    <div>
+    <div id="level1containerdv">
       <div className="main_dv">
        { /*Carousel
-          About This Listing
            Product Specifications */}
+        <About />
       </div>
       <div className="sidebar_dv">
-        {title}
-        {pricing}
-        {module}
-        {module}
-        {module}
-        {seller}
-        {findmore}
+        <Title />
+        {/*pricing*/}
+        <Nudge />
+        <Seller />
+        <Findmore />
       </div>
     </div>
     )
