@@ -1,8 +1,8 @@
 {
-  "name": "",
+  "name": "Reverb",
   "version": "",
   "description": "",
-  "author": "",
+  "author": "David Mar",
   "license": "",
   "engines": {
     "node": ">=6.13.0"

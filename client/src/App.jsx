@@ -3,7 +3,10 @@ import Nudge from './Nudge.jsx';
 import Seller from './Seller.jsx';
 import About from './About.jsx';
 import Findmore from './Findmore.jsx';
-import Title from './Title.jsx'
+import Title from './Title.jsx';
+import Pricing from './Pricing.jsx';
+import Carousel from './Carousel.jsx';
+import Specifications from './Specifications.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -14,13 +17,14 @@ class App extends React.Component {
     return(
     <div id="level1containerdv">
       <div className="main_dv">
-       { /*Carousel
-           Product Specifications */}
+        <Carousel />
         <About />
+        <Specifications />
+
       </div>
       <div className="sidebar_dv">
         <Title />
-        {/*pricing*/}
+        <Pricing />
         <Nudge />
         <Seller />
         <Findmore />
