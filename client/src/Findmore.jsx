@@ -16,8 +16,8 @@ var Findmore = () => {
       <div>(2)</div>
 
       <div>
-        <a class="csp-pg-card__price-link" href="https://reverb.com/p/squier-paranormal-super-sonic/new">59 new from $349.99</a>
-        <a class="csp-pg-card__price-link" href="https://reverb.com/p/squier-paranormal-super-sonic/  used">3 used from $299.99</a>
+        <a className="csp-pg-card__price-link" href="https://reverb.com/p/squier-paranormal-super-sonic/new">59 new from $349.99</a>
+        <a className="csp-pg-card__price-link" href="https://reverb.com/p/squier-paranormal-super-sonic/  used">3 used from $299.99</a>
       </div>
 
 
