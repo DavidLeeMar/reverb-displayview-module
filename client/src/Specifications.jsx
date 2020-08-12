@@ -27,13 +27,13 @@ class Specifications extends React.Component {
   render() {
     if (!this.state.openSpecs) {
       return (
-        <div onClick={this.handleClickOpenSpecs}>
+        <div className="productspecstitledv" onClick={this.handleClickOpenSpecs}>
           <h3>Product Specs</h3>
         </div>
       )
     } else if (this.state.readMoreSpecs) {
       return (
-        <div>
+        <div className="specificationsdv">
           <div onClick={this.handleClickOpenSpecs}>
             <h3>Product Specs</h3>
           </div>
@@ -41,65 +41,65 @@ class Specifications extends React.Component {
             <table>
               <tbody>
                 <tr>
-                  <td>Condition</td>
-                  <td>"Brand New"
+                  <td className="eachspecificationdv">Condition</td>
+                  <td>Brand New
                     <div>
-                      <span className="opacity-70 mr-space">Brand New items are   sold by an authorized dealer or original builder and   include all original packaging.</span>
-                      <a className="" href="https://reverb.com/news/  gear-conditions-and-what-they-mean#brand-new">learn   more</a>
+                      <span className="opacity-70dv">Brand New items are   sold by an authorized dealer or original builder and   include all original packaging.</span>
+                      <a className="specificationlinkdv" href="https://reverb.com/news/  gear-conditions-and-what-they-mean#brand-new">learn   more</a>
                     </div>
                   </td>
                 </tr>
                 <tr>
-                  <td>Brand</td>
-                  <td><a className="" href="https://reverb.com/brand/squier">Squier</a></td>
+                  <td className="eachspecificationdv">Brand</td>
+                  <td><a className="specificationlinkdv" href="https://reverb.com/brand/squier">Squier</a></td>
                 </tr>
                 <tr>
-                  <td>Model</td>
-                  <td><a className="" href="https://reverb.com/marketplace?make=squier&amp;product_type=electric-guitars&amp;query=Paranormal%20Super-Sonic">Paranormal Super-Sonic</a></td>
+                  <td className="eachspecificationdv">Model</td>
+                  <td><a className="specificationlinkdv" href="https://reverb.com/marketplace?make=squier&amp;product_type=electric-guitars&amp;query=Paranormal%20Super-Sonic">Paranormal Super-Sonic</a></td>
                 </tr>
                 <tr>
-                  <td>Finish</td>
-                  <td><a className="" href="https://reverb.com/marketplace?product_type=electric-guitars&amp;query=Ice%20Blue%20Metallic">Ice Blue Metallic</a></td>
+                  <td className="eachspecificationdv">Finish</td>
+                  <td><a className="specificationlinkdv" href="https://reverb.com/marketplace?product_type=electric-guitars&amp;query=Ice%20Blue%20Metallic">Ice Blue Metallic</a></td>
                 </tr>
                 <tr>
-                  <td>Categories</td>
-                  <td><a className="" href="https://reverb.com/c/electric-guitars/solid-body">Solid Body</a></td>
+                  <td className="eachspecificationdv">Categories</td>
+                  <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">Solid Body</a></td>
                 </tr>
                 <tr>
-                  <td>Finish Style</td>
-                  <td><a className="" href="https://reverb.com/c/electric-guitars/solid-body">Solid Body</a></td>
+                  <td className="eachspecificationdv">Finish Style</td>
+                  <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">Metallic</a></td>
                 </tr>
                 <tr>
-                  <td>Number of Strings</td>
-                  <td><a className="" href="https://reverb.com/c/electric-guitars/solid-body">Solid Body</a></td>
+                  <td className="eachspecificationdv">Number of Strings</td>
+                  <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">6 String</a></td>
                 </tr>
                 <tr>
-                  <td>Right / Left Handed</td>
-                  <td><a className="" href="https://reverb.com/c/electric-guitars/solid-body">Solid Body</a></td>
+                  <td className="eachspecificationdv">Right / Left Handed</td>
+                  <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">Right Handed</a></td>
                 </tr>
                 <tr>
-                  <td>Body Features</td>
-                  <td><a className="" href="https://reverb.com/c/electric-guitars/solid-body">Solid Body</a></td>
+                  <td className="eachspecificationdv">Body Features</td>
+                  <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">Offset</a></td>
                 </tr>
                 <tr>
-                  <td>Neck Material</td>
-                  <td><a className="" href="https://reverb.com/c/electric-guitars/solid-body">Solid Body</a></td>
+                  <td className="eachspecificationdv">Neck Material</td>
+                  <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">Maple</a></td>
                 </tr>
                 <tr>
-                  <td>Body Type</td>
-                  <td><a className="" href="https://reverb.com/c/electric-guitars/solid-body">Solid Body</a></td>
+                  <td className="eachspecificationdv">Body Type</td>
+                  <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">Solid Body</a></td>
                 </tr>
                 <tr>
-                  <td>Body Material</td>
-                  <td><a className="" href="https://reverb.com/c/electric-guitars/solid-body">Solid Body</a></td>
+                  <td className="eachspecificationdv">Body Material</td>
+                  <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">Poplar</a></td>
                 </tr>
                 <tr>
-                  <td>Fretboard Material</td>
-                  <td><a className="" href="https://reverb.com/c/electric-guitars/solid-body">Solid Body</a></td>
+                  <td className="eachspecificationdv">Fretboard Material</td>
+                  <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">Laurel</a></td>
                 </tr>
                 <tr>
                   <td>
-                    <button className="collapsing-list__toggle" onClick={this.handleClickReadMore}>Collapse</button>
+                    <button className="collaspingtoggledv" onClick={this.handleClickReadMore}>Collapse</button>
                   </td>
                 </tr>
               </tbody>
@@ -109,7 +109,7 @@ class Specifications extends React.Component {
       )
     } else {
       return (
-        <div>
+        <div className="specificationsdv">
           <div onClick={this.handleClickOpenSpecs}>
             <h3>Product Specs</h3>
           </div>
@@ -117,33 +117,33 @@ class Specifications extends React.Component {
             <table>
               <tbody>
                 <tr>
-                  <td>Condition</td>
-                  <td>"Brand New"
+                  <td className="eachspecificationdv">Condition</td>
+                  <td>Brand New
                     <div>
-                      <span className="opacity-70 mr-space">Brand New items are   sold by an authorized   dealer or           original builder and   include all original packaging.</span>
-                      <a className="" href="https://reverb.com/news/              gear-conditions-and-what-they-mean#brand-new">learn   more</a>
+                      <span className="opacity-70dv">Brand New items are sold by an authorized   dealer or original builder and include all original packaging.</span>
+                      <a className="specificationlinkdv" href="https://reverb.com/news/              gear-conditions-and-what-they-mean#brand-new">learn   more</a>
                     </div>
                   </td>
                 </tr>
                 <tr>
-                  <td>Brand</td>
-                  <td><a className="" href="https://reverb.com/brand/squier">Squier</a></td>
+                  <td className="eachspecificationdv">Brand</td>
+                  <td><a className="specificationlinkdv" href="https://reverb.com/brand/squier">Squier</a></td>
                 </tr>
                 <tr>
-                  <td>Model</td>
-                  <td><a className="" href="https://reverb.com/marketplace?make=squier&amp;            product_type=electric-guitars&amp;query=Paranormal%20Super-Sonic">Paranormal   Super-Sonic</a></td>
+                  <td className="eachspecificationdv">Model</td>
+                  <td><a className="specificationlinkdv" href="https://reverb.com/marketplace?make=squier&amp;            product_type=electric-guitars&amp;query=Paranormal%20Super-Sonic">Paranormal   Super-Sonic</a></td>
                 </tr>
                 <tr>
-                  <td>Finish</td>
-                  <td><a className="" href="https://reverb.com/marketplace?product_type=electric-guitars&  amp;          query=Ice%20Blue%20Metallic">Ice Blue Metallic</a></td>
+                  <td className="eachspecificationdv">Finish</td>
+                  <td><a className="specificationlinkdv" href="https://reverb.com/marketplace?product_type=electric-guitars&  amp;          query=Ice%20Blue%20Metallic">Ice Blue Metallic</a></td>
                 </tr>
                 <tr>
-                  <td>Categories</td>
-                  <td><a className="" href="https://reverb.com/c/electric-guitars/solid-body">Solid Body</  a></td>
+                  <td className="eachspecificationdv">Categories</td>
+                  <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">Solid Body</  a></td>
                 </tr>
                 <tr>
                   <td>
-                    <button className="collapsing-list__toggle" onClick={this.handleClickReadMore}>Show More</button>
+                    <button className="collaspingtoggledv" onClick={this.handleClickReadMore}>Show More</button>
                   </td>
                 </tr>
               </tbody>
