@@ -4,14 +4,14 @@ var CarouselImage = (props) => {
 
   if (props.current_index === props.index) {
     return (
-      <div className="imagebarselecteddiv" onClick={() => {props.handleImageBarClick(props.index)}}>
-        <img src={props.image} />
+      <div className="imagebarspandv" onClick={() => {props.handleImageBarClick(props.index)}}>
+        <img className="selectedthumbnaildv" src={props.image} />
       </div>
     )
   } else {
     return (
-      <div className="imagebardiv" onClick={() => {props.handleImageBarClick(props.index)}}>
-        <img src={props.image} />
+      <div className="imagebarspandv" onClick={() => {props.handleImageBarClick(props.index)}}>
+        <img className="unselectedthumbnaildv" src={props.image} />
       </div>
     )
   }
