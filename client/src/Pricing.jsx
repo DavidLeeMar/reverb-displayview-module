@@ -3,11 +3,12 @@ import React from 'react';
 var Pricing = () => {
 
   return (
-    <div>
-      <span className="price-display">$349.99</span>
-      <div className="price-with-shipping__shipping">Free Shipping</div>
-      <button type="submit" className="add-to-cart-button">Add to Cart</button>
-      <button title="Watch"><div><span>Watch</span></div></button>
+    <div className="pricedisplaycomponentdv">
+      <span className="price-displaydv">$349.99</span>
+      <div className="shippingpricedv">Free Shipping</div>
+      <button type="submit" className="addtocartbuttondv">Add to Cart</button>
+      <button title="Watch" className="watchbuttondv"><div><span>Watch</span></div></button>
+      <div className="dropalertsdivdv"><img className="dropalertpngdv" src="./dropalerts.png"></img></div>
     </div>
   )
 }
