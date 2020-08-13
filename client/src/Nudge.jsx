@@ -4,29 +4,32 @@ var Nudge = () => {
 
   return (
     <div>
-      <div>
-        <div className="shippingquickly">
+      <div className="shippingquicklydv">
+        <div className="shippingquicklyicondv">
 
         </div>
-        <div>
-          <p>Still Shipping Quickly</p>
-          <p>This seller is shipping orders within 24   hours, on average.</p>
+        <div className="shippingquicklytextdv">
+          <p className="shippingquicklytitledv">Still Shipping Quickly</p>
+          <p className="shippingquicklybodydv">This seller is shipping orders within 24 hours, on average.</p>
         </div>
       </div>
-      <div>
-        <div className="buywithconfidence">
+
+      <div className="buywithconfidencedv">
+        <div className="buywithconfidenceicondv">
         </div>
-        <div>
-          <p>Buy With Confidence</p>
-          <p>Reverb Protection has you covered. We provide a safe community for finding the gear you want.</p>
+        <div className="buywithconfidencetextdv">
+          <p className="buywithconfidencetitledv">Buy With Confidence</p>
+          <p className="buywithconfidencebodydv">Reverb Protection has you covered. We provide a safe community for finding the gear you want.</p>
         </div>
       </div>
-      <div>
-        <div className="affirm">
+
+
+      <div className="affirmdv">
+        <div className="affirmicondv">
         </div>
-        <div>
-          <p>Buy now, pay later – from 0% APR</p>
-          <p><span>As low as <b>$20/month</b> with Affirm monthly payments.</span>
+        <div className="affirmtextdv">
+          <p className="affirmtitledv">Buy now, pay later – from 0% APR</p>
+          <p className="affirmbodydv"><span>As low as <b>$20/month</b> with Affirm monthly payments.</span>
           <button type="button">Learn more</button>
           </p>
         </div>
