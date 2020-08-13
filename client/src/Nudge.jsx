@@ -30,7 +30,7 @@ var Nudge = () => {
         <div className="affirmtextdv">
           <p className="affirmtitledv">Buy now, pay later – from 0% APR</p>
           <p className="affirmbodydv"><span>As low as <b>$20/month</b> with Affirm monthly payments.</span>
-          <button type="button">Learn more</button>
+          <button className="button-as-link-nudge-dv" type="button">Learn more</button>
           </p>
         </div>
       </div>

@@ -29,13 +29,15 @@ class Specifications extends React.Component {
       return (
         <div className="productspecstitledv" onClick={this.handleClickOpenSpecs}>
           <h3>Product Specs</h3>
+          <div className="productspecsarrowdowngreydv"></div>
         </div>
       )
     } else if (this.state.readMoreSpecs) {
       return (
         <div className="specificationsdv">
-          <div onClick={this.handleClickOpenSpecs}>
+          <div className="productspecstitleinsidedv" onClick={this.handleClickOpenSpecs}>
             <h3>Product Specs</h3>
+            <div className="productspecsarrowupgreydv"></div>
           </div>
           <div>
             <table>
@@ -110,8 +112,9 @@ class Specifications extends React.Component {
     } else {
       return (
         <div className="specificationsdv">
-          <div onClick={this.handleClickOpenSpecs}>
+          <div className="productspecstitleinsidedv" onClick={this.handleClickOpenSpecs}>
             <h3>Product Specs</h3>
+            <div className="productspecsarrowupgreydv"></div>
           </div>
           <div>
             <table>
