@@ -23,7 +23,8 @@
     "pure-react-carousel": "^1.27.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-star-rating-component": "^1.4.1"
+    "react-star-rating-component": "^1.4.1",
+    "react-tooltip": "^4.2.8"
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",

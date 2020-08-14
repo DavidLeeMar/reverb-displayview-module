@@ -1,5 +1,6 @@
 import React from 'react';
 import StarRatingComponent from 'react-star-rating-component';
+import ReactTooltip from "react-tooltip";
 
 var Seller = () => {
 
@@ -29,15 +30,24 @@ var Seller = () => {
       <div>
         <div className="nudgebadgedivdv">
           <div className="preferredsellerbadgedv"></div>
-          <span className="badgetextdv">Preferred Seller</span>
+          <span className="badgetextdv" data-tip data-for="preferredtip">Preferred Seller</span>
+          <ReactTooltip id="preferredtip" place="top" effect="solid">
+          This seller provides outstanding service
+          </ReactTooltip>
         </div>
         <div className="nudgebadgedivdv">
           <div className="quickresponderbadgedv"></div>
-          <span className="badgetextdv">Quick Responder</span>
+          <span className="badgetextdv" data-tip data-for="respondertip">Quick Responder</span>
+          <ReactTooltip id="respondertip" place="top" effect="solid">
+          This seller responds quickly to messages
+          </ReactTooltip>
         </div>
         <div className="nudgebadgedivdv">
           <div className="quickshipperbadgedv"></div>
-          <span className="badgetextdv">Quick Shipper</span>
+          <span className="badgetextdv" data-tip data-for="shippertip">Quick Shipper</span>
+          <ReactTooltip id="shippertip" place="top" effect="solid">
+          On average, this seller ships quickly
+          </ReactTooltip>
         </div>
       </div>
 
