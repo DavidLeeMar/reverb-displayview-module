@@ -10,7 +10,10 @@ var Seller = () => {
         <div className="sellerheaderdv">Shipped From</div>
         <a className="sellernamedv" href="https://reverb.com/shop/toneshopguitars">Tone Shop Guitars</a>
         <div className="selleraddressdv">Addison, TX, United States</div>
-        <div className="sellerreviewcountdv"><StarRatingComponent name="rate1" starCount={5} value={5} emptyStarColor={"#FFF0DA"} />(3,948)</div>
+        <div className="sellerreviewcountcontainerdv">
+          <div className="sellerreviewcountdv"><StarRatingComponent   name="rate1" starCount={5} value={5} emptyStarColor={"#FFF0DA"} /></div>
+          <div className="numberopacitydv">(3,948)</div>
+        </div>
         <div className='sellerstatsdv'>
           <div className="sellersalesstatsdv">
             <div>Sales</div>

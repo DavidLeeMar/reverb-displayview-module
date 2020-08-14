@@ -15,8 +15,10 @@ var Findmore = () => {
           <div>
             <h3 className="findmorenamedv">Squier Paranormal Super-Sonic</h3>
           </div>
-          <div className="sellerreviewcountdv"><StarRatingComponent name="rate1" starCount={5} value={5} emptyStarColor={"#FFF0DA"} />(3,948)
-          </div>
+          <div className="sellerreviewcountcontainerdv">
+            <div className="sellerreviewcountdv"><StarRatingComponent   name="rate1" starCount={5} value={5} emptyStarColor={"#FFF0DA"} /></div>
+            <div className="numberopacitydv">(264)</div>
+        </div>
         </div>
       </div>
       <div className="findmorelinksdivdv">
