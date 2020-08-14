@@ -7,6 +7,7 @@ import Title from './Title.jsx';
 import Pricing from './Pricing.jsx';
 import Carousel from './Carousel.jsx';
 import Specifications from './Specifications.jsx';
+import SignupModal from './SignupModal.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -16,12 +17,14 @@ class App extends React.Component {
       current_image: "https://images.reverb.com/image/upload/s--Ky9kGeaz--/f_auto,t_large/v1595453443/hmxe3qot7tqukyoplqpo.jpg",
       current_index: 0,
       images: ["https://images.reverb.com/image/upload/s--Ky9kGeaz--/f_auto,t_large/v1595453443/hmxe3qot7tqukyoplqpo.jpg", "https://images.reverb.com/image/upload/s--2zNKv-Y2--/f_auto,t_large/v1595453447/qjvpccyqrvkpzndnogwv.jpg", "https://images.reverb.com/image/upload/s--MvjDEwZM--/f_auto,t_supersize/v1595453447/pdvwx3gl9egf5rbowwqf.jpg"],
-      images_length: 3
+      images_length: 3,
+      showModal: false
     }
     this.getProduct = this.getProduct.bind(this)
     this.getNextImage = this.getNextImage.bind(this)
     this.getPrevImage = this.getPrevImage.bind(this)
     this.handleImageBarClick = this.handleImageBarClick.bind(this)
+    this.handleSignUpModalToggle = this.handleSignUpModalToggle.bind(this)
   }
 
   getProduct() {
@@ -63,6 +66,12 @@ class App extends React.Component {
     })
   }
 
+  handleSignUpModalToggle() {
+    this.setState({
+      showModal: !this.state.showModal
+    })
+  }
+
   render() {
     return(
     <div className="container_dv">
@@ -78,10 +87,11 @@ class App extends React.Component {
       </div>
       <div className="sidebar_dv">
         <Title />
-        <Pricing />
+        <Pricing state={this.state} handleSignUpModalToggle={this.handleSignUpModalToggle}/>
         <Nudge />
         <Seller />
         <Findmore />
+        <SignupModal showModal={this.state.showModal} handleSignUpModalToggle={this.handleSignUpModalToggle}/>
       </div>
     </div>
     )
