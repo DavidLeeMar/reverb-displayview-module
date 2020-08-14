@@ -9,6 +9,8 @@ CREATE TABLE sellers (
   city VARCHAR(250) NOT NULL,
   _state VARCHAR(2) NOT NULL,
   country VARCHAR(100) NOT NULL,
+  rating INTEGER NOT NULL,
+  joinyear INTEGER NOT NULL,
   PRIMARY KEY(ID)
 );
 
@@ -25,7 +27,7 @@ CREATE TABLE products (
   productname VARCHAR(200) NOT NULL,
   price FLOAT NOT NULL,
   shippingcost FLOAT NOT NULL,
-  productdescription VARCHAR(300) NOT NULL,
+  productdescription VARCHAR(7000) NOT NULL,
   seller_id INTEGER NOT NULL,
   category_id INTEGER NOT NULL,
   listed VARCHAR(250) NOT NULL,
@@ -34,6 +36,14 @@ CREATE TABLE products (
   finish	VARCHAR(250) NOT NULL,
   _year INTEGER (4) NOT NULL,
   made_in VARCHAR(250) NOT NULL,
+  finishstyle VARCHAR(250) NOT NULL,
+  numberstrings INTEGER NOT NULL,
+  rightlefthanded VARCHAR(250) NOT NULL,
+  bodyfeatures VARCHAR(250) NOT NULL,
+  neckmaterial VARCHAR(250) NOT NULL,
+  bodytype VARCHAR(250) NOT NULL,
+  bodymaterial VARCHAR(250) NOT NULL,
+  fretboardmaterial VARCHAR(250) NOT NULL,
   PRIMARY KEY(ID)
 );
 

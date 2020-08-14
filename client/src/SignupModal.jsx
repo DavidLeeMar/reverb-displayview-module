@@ -50,8 +50,8 @@ class SignupModal extends React.Component {
 
             <input type="submit" value="Sign Up" /><br></br>
 
-            <input type="checkbox" checked="false"/> <span>Get the latest news, deals, and promotions via email</span><br></br>
-            <input type="checkbox" checked="false"/><span>By clicking Sign Up, I expressly agree to accept Reverb’s Terms of Use and Privacy Policy - REQUIRED</span>
+            <input type="checkbox" checked={false} onChange={() => console.log('Hello')}/> <span>Get the latest news, deals, and promotions via email</span><br></br>
+            <input type="checkbox" checked={false} onChange={() => console.log('Hello')}/><span>By clicking Sign Up, I expressly agree to accept Reverb’s Terms of Use and Privacy Policy - REQUIRED</span>
 
           </form>
 
