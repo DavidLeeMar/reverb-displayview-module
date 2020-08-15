@@ -9,6 +9,8 @@ import Pricing from './Pricing.jsx';
 import Carousel from './Carousel.jsx';
 import Specifications from './Specifications.jsx';
 import SignupModal from './SignupModal.jsx';
+import ImageModal from './ImageModal.jsx';
+
 
 
 class App extends React.Component {
@@ -20,13 +22,15 @@ class App extends React.Component {
       current_index: 0,
       images: [],
       images_length: 0,
-      showModal: false
+      showSignUpModal: false,
+      showImageModal: false
     }
     this.getProduct = this.getProduct.bind(this)
     this.getNextImage = this.getNextImage.bind(this)
     this.getPrevImage = this.getPrevImage.bind(this)
     this.handleImageBarClick = this.handleImageBarClick.bind(this)
     this.handleSignUpModalToggle = this.handleSignUpModalToggle.bind(this)
+    this.handleImageModalToggle = this.handleImageModalToggle.bind(this)
   }
 
   componentDidMount() {
@@ -86,7 +90,14 @@ class App extends React.Component {
 
   handleSignUpModalToggle() {
     this.setState({
-      showModal: !this.state.showModal
+      showSignUpModal: !this.state.showSignUpModal
+    })
+  }
+
+  handleImageModalToggle() {
+    console.log("ShowImageModal Toggle ran");
+    this.setState({
+      showImageModal: !this.state.showImageModal
     })
   }
 
@@ -98,7 +109,9 @@ class App extends React.Component {
           state={this.state}
           getPrevImage={this.getPrevImage}
           getNextImage={this.getNextImage}
-          handleImageBarClick={this.handleImageBarClick} />
+          handleImageBarClick={this.handleImageBarClick}
+          handleImageModalToggle={this.handleImageModalToggle}/>
+        <ImageModal state={this.state} handleImageModalToggle={this.handleImageModalToggle}/>
         <About state={this.state}/>
         <Specifications state={this.state} />
 
@@ -109,7 +122,7 @@ class App extends React.Component {
         <Nudge />
         <Seller state={this.state} />
         <Findmore />
-        <SignupModal showModal={this.state.showModal} handleSignUpModalToggle={this.handleSignUpModalToggle}/>
+        <SignupModal showSignUpModal={this.state.showSignUpModal} handleSignUpModalToggle={this.handleSignUpModalToggle}/>
       </div>
     </div>
     )
