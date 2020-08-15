@@ -7,6 +7,7 @@ class SignupModal extends React.Component {
     super (props)
   }
 
+
   render() {
     return (
       <div id="myModal" className={this.props.showModal ? 'openedModal' : 'closedModal'}>

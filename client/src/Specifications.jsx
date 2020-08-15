@@ -10,6 +10,7 @@ class Specifications extends React.Component {
     this.handleClickReadMore = this.handleClickReadMore.bind(this)
   }
 
+
   handleClickOpenSpecs() {
     this.setState({
       productView: this.state.productView ? 0 : 1

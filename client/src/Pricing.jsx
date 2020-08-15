@@ -2,6 +2,7 @@ import React from 'react';
 
 var Pricing = (props) => {
 
+
   return (
     <div className="pricedisplaycomponentdv">
       <span className="price-displaydv">${props.state.product.price}</span>
