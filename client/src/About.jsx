@@ -15,8 +15,6 @@ class About extends React.Component {
     })
   }
 
-
-
   render() {
       if(!this.state.aboutListingToggle) {
         return (

@@ -2,12 +2,10 @@ import React from 'react';
 
 var Nudge = () => {
 
-
   return (
     <div>
       <div className="shippingquicklydv">
         <div className="shippingquicklyicondv">
-
         </div>
         <div className="shippingquicklytextdv">
           <p className="shippingquicklytitledv">Still Shipping Quickly</p>

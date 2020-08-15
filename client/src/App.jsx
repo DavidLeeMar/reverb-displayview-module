@@ -10,7 +10,6 @@ import Carousel from './Carousel.jsx';
 import Specifications from './Specifications.jsx';
 import SignupModal from './SignupModal.jsx';
 
-
 class App extends React.Component {
   constructor(props) {
     super(props)

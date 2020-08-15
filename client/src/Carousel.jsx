@@ -1,10 +1,7 @@
 import React from 'react';
 import CarouselImage from './CarouselImage.jsx'
 
-
-
 class Carousel extends React.Component {
-
   constructor(props) {
     super(props)
     this.state = {

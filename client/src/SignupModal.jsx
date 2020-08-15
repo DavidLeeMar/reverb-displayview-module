@@ -2,11 +2,9 @@ import React from 'react';
 
 
 class SignupModal extends React.Component {
-
   constructor(props) {
     super (props)
   }
-
 
   render() {
     return (
