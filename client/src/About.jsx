@@ -25,7 +25,7 @@ class About extends React.Component {
             <div>
               <div>
                 <div className="aboutcontentdv">
-                The Paranormal Super-Sonic™ is stranger than fiction with its reverse body shape an headstock, producing massive tone courtesy of its dual Squier Atomic humbucking pickups. The Super-Sonic is lightning fast with its “C”-shape neck profile and narrow 1.5” nut width, and also features a vintage-style tremolo for expressive string bending effects. With its otherworldly looks, transcendent playability and earth-shattering tone, this model will transport any player into a Paranormal realm.
+                {this.props.state.product.productdescription}
                 </div>
                 <button className="button-as-link-dv" onClick={this.handleAboutListingToggle}>read more... </button>
               </div>
@@ -44,7 +44,7 @@ class About extends React.Component {
             <div>
               <div>
                 <div className="aboutcontentfulldv">
-                The Paranormal Super-Sonic™ is stranger than fiction with its reverse body shape and   headstock, producing massive tone courtesy of its dual Squier Atomic humbucking pickups. The Super-Sonic is lightning fast with its “C”-shape neck profile and narrow 1.5” nut width, and   also features a vintage-style tremolo for expressive string bending effects. With its   otherworldly looks, transcendent playability and earth-shattering tone, this model will   transport any player into a Paranormal realm.
+                {this.props.state.product.productdescription}
                 </div>
               </div>
               <div>

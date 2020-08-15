@@ -2,17 +2,17 @@ import React from 'react';
 import StarRatingComponent from 'react-star-rating-component';
 import ReactTooltip from "react-tooltip";
 
-var Seller = () => {
+var Seller = (props) => {
 
   return (
     <div className="sellercomponentdv">
 
       <div>
         <div className="sellerheaderdv">Shipped From</div>
-        <a className="sellernamedv" href="https://reverb.com/shop/toneshopguitars">Tone Shop Guitars</a>
-        <div className="selleraddressdv">Addison, TX, United States</div>
+        <a className="sellernamedv" href="https://reverb.com/shop/toneshopguitars">{props.state.product.sellername}</a>
+        <div className="selleraddressdv">{props.state.product.city}, {props.state.product._state}, {props.state.product.country}</div>
         <div className="sellerreviewcountcontainerdv">
-          <div className="sellerreviewcountdv"><StarRatingComponent   name="rate1" starCount={5} value={5} emptyStarColor={"#FFF0DA"} /></div>
+          <div className="sellerreviewcountdv"><StarRatingComponent   name="rate1" starCount={5} value={props.state.product.rating} emptyStarColor={"#FFF0DA"} /></div>
           <div className="numberopacitydv">(3,948)</div>
         </div>
         <div className='sellerstatsdv'>
@@ -22,7 +22,7 @@ var Seller = () => {
           </div>
           <div>
             <div>Joined Reverb</div>
-            <div className="weight-bolddv">2015</div>
+            <div className="weight-bolddv">{props.state.product.joinyear}</div>
           </div>
         </div>
       </div>

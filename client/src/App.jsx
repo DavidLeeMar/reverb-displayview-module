@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import Nudge from './Nudge.jsx';
 import Seller from './Seller.jsx';
 import About from './About.jsx';
@@ -14,10 +15,10 @@ class App extends React.Component {
     super(props)
     this.state = {
       product: {},
-      current_image: "https://images.reverb.com/image/upload/s--Ky9kGeaz--/f_auto,t_large/v1595453443/hmxe3qot7tqukyoplqpo.jpg",
+      current_image: "",
       current_index: 0,
-      images: ["https://images.reverb.com/image/upload/s--Ky9kGeaz--/f_auto,t_large/v1595453443/hmxe3qot7tqukyoplqpo.jpg", "https://images.reverb.com/image/upload/s--2zNKv-Y2--/f_auto,t_large/v1595453447/qjvpccyqrvkpzndnogwv.jpg", "https://images.reverb.com/image/upload/s--MvjDEwZM--/f_auto,t_supersize/v1595453447/pdvwx3gl9egf5rbowwqf.jpg"],
-      images_length: 3,
+      images: [],
+      images_length: 0,
       showModal: false
     }
     this.getProduct = this.getProduct.bind(this)
@@ -27,8 +28,24 @@ class App extends React.Component {
     this.handleSignUpModalToggle = this.handleSignUpModalToggle.bind(this)
   }
 
-  getProduct() {
-  //axios request to get data and setState
+  componentDidMount() {
+    this.getProduct(14)
+  }
+
+  getProduct(id) {
+    axios.get(`/api/${id}`)
+    .then((results)=>{
+      let imagesArray = [];
+      results.data.forEach((item) => imagesArray.push(item.imagename));
+      this.setState({
+        product: results.data[0],
+        current_image: imagesArray[0],
+        current_index: 0,
+        images: imagesArray,
+        images_length: imagesArray.length
+      })
+    })
+    .catch((err) => console.error(err))
   }
 
   getNextImage() {
@@ -81,15 +98,15 @@ class App extends React.Component {
           getPrevImage={this.getPrevImage}
           getNextImage={this.getNextImage}
           handleImageBarClick={this.handleImageBarClick} />
-        <About />
-        <Specifications />
+        <About state={this.state}/>
+        <Specifications state={this.state} />
 
       </div>
       <div className="sidebar_dv">
-        <Title />
+        <Title state={this.state}/>
         <Pricing state={this.state} handleSignUpModalToggle={this.handleSignUpModalToggle}/>
         <Nudge />
-        <Seller />
+        <Seller state={this.state} />
         <Findmore />
         <SignupModal showModal={this.state.showModal} handleSignUpModalToggle={this.handleSignUpModalToggle}/>
       </div>

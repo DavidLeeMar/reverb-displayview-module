@@ -1,18 +1,18 @@
 import React from 'react';
 
-var Title = () => {
+var Title = (props) => {
   return (
     <div className="titledivdv">
       <div className="breadcrumbsdv">
-        <span>Guitar </span>
+        <span>{props.state.product.topcategory}</span>
         <span>> </span>
-        <span>Two Stringed </span>
+        <span>{props.state.product.maincategory}</span>
         <span>> </span>
-        <span>Fender</span>
+        <span>{props.state.product.subcategory}</span>
       </div>
-      <h1 className="titledv">Fender Player Series Stratocaster Guitar Maple Neck Black</h1>
+      <h1 className="titledv">{props.state.product.productname}</h1>
       <div className="conditiontitledv" data-tooltip-text="Hey">
-        <div> Brand New</div>
+        <div>{props.state.product._condition}</div>
       </div>
       <div className="condition-indicator__barsdivdv">
         <span className="condition-indicator__barsdv"></span>

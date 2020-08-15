@@ -49,28 +49,28 @@ class Specifications extends React.Component {
       <>
         <tr>
           <td className="eachspecificationdv">Condition</td>
-          <td>Brand New
+          <td>{this.props.state.product._condition}
             <div>
-              <span className="opacity-70dv">Brand New items are sold by an authorized dealer or original builder and include all original packaging.</span>
+              <span className="opacity-70dv">items are sold by an authorized dealer or original builder and include all original packaging.</span>
               <a className="specificationlinkdv" href="https://reverb.com/news/              gear-conditions-and-what-they-mean#brand-new">learn   more</a>
             </div>
           </td>
         </tr>
         <tr>
           <td className="eachspecificationdv">Brand</td>
-          <td><a className="specificationlinkdv" href="https://reverb.com/brand/squier">Squier</a></td>
+          <td><a className="specificationlinkdv" href="https://reverb.com/brand/squier">{this.props.state.product.subcategory}</a></td>
         </tr>
         <tr>
           <td className="eachspecificationdv">Model</td>
-          <td><a className="specificationlinkdv" href="https://reverb.com/marketplace?make=squier&amp;            product_type=electric-guitars&amp;query=Paranormal%20Super-Sonic">Paranormal   Super-Sonic</a></td>
+          <td><a className="specificationlinkdv" href="https://reverb.com/marketplace?make=squier&amp;            product_type=electric-guitars&amp;query=Paranormal%20Super-Sonic">{this.props.state.product.model}</a></td>
         </tr>
         <tr>
           <td className="eachspecificationdv">Finish</td>
-          <td><a className="specificationlinkdv" href="https://reverb.com/marketplace?product_type=electric-guitars&  amp;          query=Ice%20Blue%20Metallic">Ice Blue Metallic</a></td>
+          <td><a className="specificationlinkdv" href="https://reverb.com/marketplace?product_type=electric-guitars&  amp;          query=Ice%20Blue%20Metallic">{this.props.state.product.finish}</a></td>
         </tr>
         <tr>
           <td className="eachspecificationdv">Categories</td>
-          <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">Solid Body</  a></td>
+          <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">{this.props.state.product.maincategory}</  a></td>
         </tr>
         {showMoreButton}
       </>
@@ -83,35 +83,35 @@ class Specifications extends React.Component {
       <>
         <tr>
           <td className="eachspecificationdv">Finish Style</td>
-          <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">Metallic</a></td>
+          <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">{this.props.state.product.finishstyle}</a></td>
         </tr>
         <tr>
           <td className="eachspecificationdv">Number of Strings</td>
-          <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">6 String</a></td>
+          <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">{this.props.state.product.numberstrings}</a></td>
         </tr>
         <tr>
           <td className="eachspecificationdv">Right / Left Handed</td>
-          <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">Right Handed</a></td>
+          <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">{this.props.state.product.rightlefthanded}</a></td>
         </tr>
         <tr>
           <td className="eachspecificationdv">Body Features</td>
-          <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">Offset</a></td>
+          <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">{this.props.state.product.bodyfeatures}</a></td>
         </tr>
         <tr>
           <td className="eachspecificationdv">Neck Material</td>
-          <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">Maple</a></td>
+          <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">{this.props.state.product.neckmaterial}</a></td>
         </tr>
         <tr>
           <td className="eachspecificationdv">Body Type</td>
-          <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">Solid Body</a></td>
+          <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">{this.props.state.product.bodytype}</a></td>
         </tr>
         <tr>
           <td className="eachspecificationdv">Body Material</td>
-          <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">Poplar</a></td>
+          <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">{this.props.state.product.bodymaterial}</a></td>
         </tr>
         <tr>
           <td className="eachspecificationdv">Fretboard Material</td>
-          <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">Laurel</a></td>
+          <td><a className="specificationlinkdv" href="https://reverb.com/c/electric-guitars/solid-body">{this.props.state.product.fretboardmaterial}</a></td>
         </tr>
         <tr>
           <td>
