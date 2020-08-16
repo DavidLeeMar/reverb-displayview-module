@@ -95,7 +95,6 @@ class App extends React.Component {
   }
 
   handleImageModalToggle() {
-    console.log("ShowImageModal Toggle ran");
     this.setState({
       showImageModal: !this.state.showImageModal
     })
@@ -111,7 +110,7 @@ class App extends React.Component {
           getNextImage={this.getNextImage}
           handleImageBarClick={this.handleImageBarClick}
           handleImageModalToggle={this.handleImageModalToggle}/>
-        <ImageModal state={this.state} handleImageModalToggle={this.handleImageModalToggle}/>
+        <ImageModal state={this.state} handleImageModalToggle={this.handleImageModalToggle} handleImageBarClick={this.handleImageBarClick} />
         <About state={this.state}/>
         <Specifications state={this.state} />
 

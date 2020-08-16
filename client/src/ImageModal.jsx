@@ -1,4 +1,5 @@
 import React from 'react';
+import CarouselImage from './CarouselImage.jsx';
 
 var ImageModal = (props) => {
 
@@ -6,13 +7,22 @@ var ImageModal = (props) => {
     <div id="myImageModal" className={props.state.showImageModal ? 'openedModal' : 'closedModal'}>
 
       {/*<!-- Modal content -->*/}
-      <div className="modal-content">
-        <span className="close" onClick={props.handleImageModalToggle}>&times;</span>
+      <div className="image-modal-content">
+        <span className="image-close" onClick={props.handleImageModalToggle}>&times;</span>
         <div>
-          <div onMouseEnter={()=> console.log('Hello')} className="mainimagedivdv">
+          <div className="image-modal-div-dv">
             <img className="mainimagedv" src={props.state.current_image} />
           </div>
-          <div></div>
+          <div className="image-modal-carousel_bardv">
+          {props.state.images.map((item, index) => {
+            return <CarouselImage
+                     image={item}
+                     index={index}
+                     key={index}
+                     current_index={props.state.current_index}
+                     handleImageBarClick={props.handleImageBarClick}/>
+          })}
+        </div>
         </div>
 
       </div>
