@@ -8,7 +8,7 @@ class SignupModal extends React.Component {
 
   render() {
     return (
-      <div id="myModal" className={this.props.showModal ? 'openedModal' : 'closedModal'}>
+      <div id="myModal" className={this.props.showSignUpModal ? 'openedModal' : 'closedModal'}>
 
         {/*<!-- Modal content -->*/}
         <div className="modal-content">
