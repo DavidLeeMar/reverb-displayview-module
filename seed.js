@@ -1,7 +1,7 @@
 const db = require('./database')
 'use strict';
 var faker = require('../faker.js');
-
+/*
 //images  REQUIRES products in order to add images, use S3 for links
 
 //Categories===========================================
@@ -81,7 +81,7 @@ var word1 = guitarbrand[Math.floor(Math.random() * guitarbrand.length)];
 var word2 = guitartype[Math.floor(Math.random() * guitartype.length)];
 var productname = word1 + ' ' + word2 + ' ' +  'Guitar';
 var price = faker.commerce.price();
-var shippingcost = faker.commerce.price();
+var shippingcost = faker.commerce.price()/100;
 var productdescription = proddesc[Math.floor(Math.random() * proddesc.length)];
 var seller_id = Math.floor(Math.random() * 99) + 1;
 var category_id = Math.floor(Math.random() * 99) + 1;
@@ -632,6 +632,22 @@ for (let i = 0; i < links.length; i++) {
       console.log(err)
     } else {
       console.log('Successfully Inserted Images')
+    }
+  })
+}
+*/
+
+for (let i = 0; i < products.length; i++) {
+
+  var cost = faker.commerce.price()/100;
+
+
+  let queryStr = `UPDATE products SET shippingcost = cost WHERE id = ${i}`
+  db.query(queryStr, (err, data)=>{
+    if (err) {
+      console.log(err)
+    } else {
+      console.log('Successfully Updated')
     }
   })
 }
