@@ -2,15 +2,13 @@ import React from 'react';
 
 
 class SignupModal extends React.Component {
-
   constructor(props) {
     super (props)
   }
 
-
   render() {
     return (
-      <div id="myModal" className={this.props.showModal ? 'openedModal' : 'closedModal'}>
+      <div id="myModal" className={this.props.showSignUpModal ? 'openedModal' : 'closedModal'}>
 
         {/*<!-- Modal content -->*/}
         <div className="modal-content">

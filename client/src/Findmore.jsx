@@ -3,7 +3,6 @@ import StarRatingComponent from 'react-star-rating-component';
 
 var Findmore = () => {
 
-
   return (
     <div className="findmorecomponentdv">
       <h3 className="findmoretitledv">Find More on Reverb</h3>

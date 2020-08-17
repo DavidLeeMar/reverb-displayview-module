@@ -1,10 +1,7 @@
 import React from 'react';
 import CarouselImage from './CarouselImage.jsx'
 
-
-
 class Carousel extends React.Component {
-
   constructor(props) {
     super(props)
     this.state = {
@@ -25,7 +22,7 @@ class Carousel extends React.Component {
         {this.state.hover ?
         <div onMouseLeave={this.handleMouseToggle} className="mainimagedivdv">
           <button className="image_prevdv" onClick={this.props.getPrevImage} aria-label="Previous Image"></button>
-          <img className="mainimagedv" src={this.props.state.current_image} />
+          <img className="mainimagedv" src={this.props.state.current_image} onClick={this.props.handleImageModalToggle}/>
           <button className="image_nextdv" onClick={this.props.getNextImage} aria-label="Next Image"></button>
         </div>
         :

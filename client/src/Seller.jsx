@@ -4,7 +4,6 @@ import ReactTooltip from "react-tooltip";
 
 var Seller = (props) => {
 
-
   return (
     <div className="sellercomponentdv">
 
