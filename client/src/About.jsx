@@ -19,7 +19,7 @@ class About extends React.Component {
       if(!this.state.aboutListingToggle) {
         return (
           <div className="aboutlistingdv">
-            <div>
+            <div className="abouttitledv">
               <h3>About This Listing</h3>
             </div>
             <div>
@@ -38,7 +38,7 @@ class About extends React.Component {
       } else {
         return (
           <div className="aboutlistingdv">
-            <div>
+            <div className="abouttitledv">
               <h3>About This Listing</h3>
             </div>
             <div>

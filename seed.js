@@ -1,8 +1,7 @@
 const db = require('./database')
 'use strict';
-var faker = require('../faker.js');
-/*
-//images  REQUIRES products in order to add images, use S3 for links
+var faker = require('faker');
+
 
 //Categories===========================================
 for (let i = 0; i < 100; i++) {
@@ -51,8 +50,11 @@ db.query(queryStr, (err, data)=>{
   }
 })
 }
-//========================================================
 
+
+
+
+//=======================================================
 //Products==============================================
 
 for (let i = 0; i < 100; i++) {
@@ -635,8 +637,8 @@ for (let i = 0; i < links.length; i++) {
     }
   })
 }
-*/
 
+/*
 for (let i = 0; i < products.length; i++) {
 
   var cost = faker.commerce.price()/100;
@@ -651,3 +653,4 @@ for (let i = 0; i < products.length; i++) {
     }
   })
 }
+*/

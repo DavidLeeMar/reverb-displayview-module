@@ -3,7 +3,7 @@ var connection = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
   password : 'student',
-  database : 'reverb'
+  database : 'reverb_display'
 });
 
 connection.connect();

@@ -37,7 +37,7 @@ class App extends React.Component {
   }
 
   getProduct(id) {
-    axios.get(`/api/${id}`)
+    axios.get(`/api/display/${id}`)
     .then((results)=>{
       let imagesArray = [];
       results.data.forEach((item) => imagesArray.push(item.imagename));

@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS reverb;
-CREATE DATABASE reverb;
-USE reverb;
+DROP DATABASE IF EXISTS reverb_display;
+CREATE DATABASE reverb_display;
+USE reverb_display;
 
 CREATE TABLE sellers (
   id INTEGER NOT NULL AUTO_INCREMENT,
