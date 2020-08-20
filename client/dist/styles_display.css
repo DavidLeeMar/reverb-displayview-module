@@ -9,24 +9,22 @@ body {
 
 
 
-
-
-h3.abouttitledv{
+.abouttitledv h3 {
   display: block;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   line-height: 1.2;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 17.6px;
 }
 
-h3.productspecstitledv {
+.productspecstitledv h3 {
   display: block;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   line-height: 1.2;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 17.6px;
 }
 
 h3.findmorenamedv {
