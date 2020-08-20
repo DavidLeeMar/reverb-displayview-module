@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 4002;
 const bodyParser = require('body-parser');
 const db = require('../database')
 
@@ -11,7 +11,7 @@ app.use('/', express.static('../client/dist'))
 
 
 
-app.get('/api/:id', (req, res) => {
+app.get('/api/display/:id', (req, res) => {
   let id = Number(req.params.id);
 
   let queryStr = `SELECT * FROM products p INNER JOIN images i ON p.id = i.product_id INNER JOIN sellers s ON s.id = p.seller_id INNER JOIN categories c ON c.id = p.category_id WHERE p.id = ${id}`
