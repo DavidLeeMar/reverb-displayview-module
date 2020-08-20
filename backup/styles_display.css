@@ -11,12 +11,12 @@ body {
 
 
 
-.abouttitledv h3{
+h3.abouttitledv{
   display: block;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: bold;
   font-size: 1em;
 }
 
