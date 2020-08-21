@@ -2,13 +2,17 @@ const express = require('express');
 const app = express();
 const port = 4002;
 const bodyParser = require('body-parser');
-const db = require('../database')
+const db = require('../database');
+const path = require('path');
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
-app.use('/', express.static('../client/dist'))
+app.get('/', function (req, res) {
+  res.redirect('/1');
+});
 
+app.use('/:id', express.static(path.join(__dirname, '../client/dist')));
 
 
 app.get('/api/display/:id', (req, res) => {

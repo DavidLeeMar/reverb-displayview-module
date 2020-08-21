@@ -33,7 +33,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.getProduct(14)
+    this.getProduct(window.location.pathname.slice(1, -1))
   }
 
   getProduct(id) {
