@@ -1,12 +1,6 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-// import {shallow} from 'enzyme';
 import Nudge from '../client/src/Nudge.jsx';
-// import { configure } from "enzyme";
-// import Adapter from "enzyme-adapter-react-16";
-// configure({ adapter: new Adapter() });
 import SignupModal from '../client/src/SignupModal.jsx';
-
+import App from '../client/src/App.jsx';
 
 describe('<Nudge /> rendering', () => {
     it('should render three child <div>', () => {
@@ -19,18 +13,6 @@ describe('<Nudge /> rendering', () => {
       expect(wrapper.find('div')).toHaveLength(10);
   });
 });
-
-// describe('<SignupModal /> interactions', () => {
-//   it('should call the onClick function when span is clicked', () => {
-//       const mockedhandleSignUpModalToggle = jest.fn();
-//       let wrapper = shallow(<SignupModal />);
-//       wrapper.instance().handleSignUpModalToggle = mockedhandleSignUpModalToggle;
-//       wrapper.find('span').first().props().onClick();
-//      expect(mockedhandleSignUpModalToggle).toHaveBeenCalledTimes(1);
-//   });
-// });
-
-
 
 describe('<SignupModal /> interactions', () => {
   it('should call the onClick function when span is clicked', () => {
@@ -48,6 +30,11 @@ describe('<SignupModal /> interactions', () => {
     expect(wrapper.find('.openedModal')).toHaveLength(1);
   });
 
+  it('should have state set to false', () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper.state('showImageModal')).toBe(false);
+  });
+
   it('should contain an element with className closedModal', () => {
     const wrapper = shallow(<SignupModal showSignUpModal={false} />);
     expect(wrapper.find('.closedModal')).toHaveLength(1);
@@ -58,3 +45,5 @@ describe('<SignupModal /> interactions', () => {
     expect(wrapper.find('.closedModal')).toHaveLength(0);
   });
 });
+
+
