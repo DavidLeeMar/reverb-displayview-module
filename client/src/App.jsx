@@ -102,6 +102,7 @@ class App extends React.Component {
   render() {
     return(
     <div className="container_dv">
+      <ImageModal state={this.state} handleImageModalToggle={this.handleImageModalToggle} handleImageBarClick={this.handleImageBarClick} />
       <div className="main_dv">
         <Carousel
           state={this.state}
@@ -109,7 +110,6 @@ class App extends React.Component {
           getNextImage={this.getNextImage}
           handleImageBarClick={this.handleImageBarClick}
           handleImageModalToggle={this.handleImageModalToggle}/>
-        <ImageModal state={this.state} handleImageModalToggle={this.handleImageModalToggle} handleImageBarClick={this.handleImageBarClick} />
         <About state={this.state}/>
         <Specifications state={this.state} />
 
