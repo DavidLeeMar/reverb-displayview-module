@@ -19,7 +19,9 @@
 ## Demo
 https://youtu.be/0t2KDnIjWBc
 
-https://imgur.com/a/HL2u3Ne
+https://i.imgur.com/ZdGbqzQ.gif
+![](https://i.imgur.com/QaQ4tsp.png)
+
 
 ## Getting_Started
 
