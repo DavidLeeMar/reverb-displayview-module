@@ -1,6 +1,6 @@
-# Project Name
+# Reverberate Product Display Modulle
 
-> Project description
+> Reverberate is an online marketplace for buying and selling musical instruments built with React, Express, and Node.js.
 
 ## Related Projects
 
