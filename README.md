@@ -19,8 +19,8 @@
 ## Demo
 https://youtu.be/0t2KDnIjWBc
 
-https://i.imgur.com/ZdGbqzQ.gif
-![](https://i.imgur.com/QaQ4tsp.png)
+
+![](https://i.imgur.com/ZdGbqzQ.gif)
 
 
 ## Getting_Started
