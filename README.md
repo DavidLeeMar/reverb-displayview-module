@@ -12,12 +12,30 @@
 ## Table of Contents
 
 1. [Demo](#Demo)
-2. [Usage](#Usage)
-3. [Requirements](#requirements)
-4. [Development](#development)
+2. [Getting Started](#Getting_Started)
+3. [Usage](#Usage)
+
 
 ## Demo
 https://youtu.be/0t2KDnIjWBc
+
+## Getting_Started
+
+Please have MySQL installed
+1. Use schema.sql to create the database
+2. Seed the database
+
+```
+npm seed
+```
+3. Update credentials within database/index.js
+
+Install dependencies
+
+From within the root directory:
+```
+npm install
+```
 
 ## Usage
 
@@ -26,23 +44,3 @@ To run the server, run npm start in a terminal window
 To seed the database, run npm run seed in another terminal window
 
 To view the product display section in a browser, enter http://localhost:4002/ in the address bar
-
-## Requirements
-
-An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
-
-- Node 6.13.0
-- etc
-
-## Development
-
-### Installing Dependencies
-
-From within the root directory:
-
-```sh
-npm install
-```
-
-# -reverb-displayview-module
-# reverb-displayview-module
