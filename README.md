@@ -19,6 +19,8 @@
 ## Demo
 https://youtu.be/0t2KDnIjWBc
 
+https://imgur.com/a/HL2u3Ne
+
 ## Getting_Started
 
 Please have MySQL installed
