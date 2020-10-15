@@ -30,9 +30,8 @@ npm seed
 ```
 3. Update credentials within database/index.js
 
-Install dependencies
+4. Install dependencies
 
-From within the root directory:
 ```
 npm install
 ```
@@ -40,7 +39,5 @@ npm install
 ## Usage
 
 To run the server, run npm start in a terminal window
-
-To seed the database, run npm run seed in another terminal window
 
 To view the product display section in a browser, enter http://localhost:4002/ in the address bar
